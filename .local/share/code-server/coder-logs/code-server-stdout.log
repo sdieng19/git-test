@@ -1,0 +1,24 @@
+[2023-10-03T22:12:10.332Z] info  code-server 4.16.1 94ef3776ad7bebfb5780dfc9632e04d20d5c9a6c
+[2023-10-03T22:12:10.332Z] info  Using user-data-dir /opt/vscode/config
+[2023-10-03T22:12:10.342Z] info  Using config file /opt/vscode/config/config.yaml
+[2023-10-03T22:12:10.342Z] info  HTTP server listening on http://0.0.0.0:8000/
+[2023-10-03T22:12:10.342Z] info    - Authentication is disabled
+[2023-10-03T22:12:10.342Z] info    - Not serving HTTPS
+[2023-10-03T22:12:10.342Z] info  Session server listening on /opt/vscode/config/code-server-ipc.sock
+[22:12:27] 
+
+
+
+
+[22:12:27] Extension host agent started.
+[22:12:31] [127.0.0.1][1b062f90][ManagementConnection] New connection established.
+[22:12:33] [127.0.0.1][bc918c05][ExtensionHostConnection] New connection established.
+[22:12:33] [127.0.0.1][bc918c05][ExtensionHostConnection] <69> Launched Extension Host Process.
+[22:12:40] Getting Manifest... ms-python.python
+[22:12:40] Installing extension: ms-python.python
+[22:12:42] Extension signature verification is not done: ms-python.python
+[22:12:52] Extracted extension to /opt/vscode/extensions/.98433e45-bef5-484f-90fa-f80ac612b9e5: ms-python.python
+[22:12:53] Renamed to /opt/vscode/extensions/ms-python.python-2023.14.0-universal
+[22:12:53] Extracting extension completed. ms-python.python
+[22:12:53] Extension installed successfully: ms-python.python
+[22:12:53] Marked extension as uninstalled ms-python.python-2023.12.0-universal
