@@ -8,12 +8,11 @@ class Graph:
     def add_edge(self, u, v):
         self.graph[u].append(v)
  
-    def dfs_rec(self, v, visited):
+    def dfs_util(self, v, visited):
         visited.add(v)
-        print(v, end=' ')
-        for neighbour in self.graph[v]:
-           if neighbour not in visited:
-               self.dfs_rec(neighbour, visited)
+        for nb in self.graph[v]:
+            if nb not in visited:
+                self.__dfs_util(nb, visited)
 
     def dfs(self, v):
         visited = set()
