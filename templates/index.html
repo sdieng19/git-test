@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valve condition prediction Interface</title>
+</head>
+<body>
+    <h1>Valve condition prediction Interface</h1>
+    <form method="POST">
+        <label for="cycle_id">Enter a cycle ID (between 2001 and 2204):</label>
+        <input type="number" name="cycle_id" id="cycle_id" required>
+        <button type="submit">Get Prediction</button>
+    </form>
+    {% if prediction is defined and real_label is defined %}
+        <p><strong>Real Label:</strong> {{ real_label }}</p>
+        <p><strong>Prediction:</strong> {{ prediction }}</p>
+        {% if prediction == real_label %}
+            <p><strong>Result:</strong> Correct Prediction</p>
+        {% else %}
+            <p><strong>Result:</strong> Incorrect Prediction</p>
+        {% endif %}
+        <p><strong>Accuracy : </strong> {{ accuracy }}</p>
+        <p><strong>F1-score : </strong> {{ f1 }}</p>
+    {% endif %}
+    {% if error is defined %}
+        <p><strong>Error:</strong> {{ error }}</p>
+    {% endif %}
+</body>
+</html>
